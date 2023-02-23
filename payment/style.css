@@ -33,15 +33,6 @@ h1{
 #paid a{
     color: rgb(0, 153, 255);
 }
-  
-#container{
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 540px;
-    border-radius: 1rem;
-    padding: 30px;
-    margin: auto;
-}
 
 #checkout{
     margin: 0 auto;
