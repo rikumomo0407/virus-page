@@ -24,6 +24,7 @@ h1{
 }
 
 #price{
+    text-align: center;
     margin: 10px 0;
     font-weight: 600;
     font-size: larger;
