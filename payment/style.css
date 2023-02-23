@@ -1,0 +1,93 @@
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto mono','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#main{
+    padding: 30px;
+}
+
+h1{
+    margin-bottom: 10px;
+    color: red;
+}
+
+#price{
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: larger;
+}
+
+#paid a{
+    color: rgb(0, 153, 255);
+}
+  
+#container{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 540px;
+    border-radius: 1rem;
+    padding: 30px;
+    margin: auto;
+}
+
+#checkout{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 2px;
+}
+  
+input:focus{
+    border-color: #b0e5e3 !important;
+    background-color: #EEF9F9 !important;
+}
+
+#PayButton{
+    margin-top: 10px;
+    height: 42px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(31, 185, 0);
+}
+
+#PayButton:hover{
+    cursor: pointer;
+    background-color: #00e244;
+}
+
+#PayButton:active{
+    background-color: #4FBCB9;
+}
+
+#attention{
+    margin-top: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+
+@media screen and (max-width: 445px){
+    html, body{
+        height: auto;
+    }
+}
