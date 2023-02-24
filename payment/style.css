@@ -50,7 +50,7 @@ input:focus{
     background-color: #EEF9F9;
 }
 
-#PayButton{
+#checkout a{
     display: inline-block;
     margin-top: 10px;
     padding: 6px;
@@ -61,13 +61,9 @@ input:focus{
     background-color: rgb(31, 185, 0);
 }
 
-#PayButton:hover{
+#checkout a:hover{
     cursor: pointer;
     background-color: #00e244;
-}
-
-#PayButton:active{
-    background-color: #4FBCB9;
 }
 
 #attention{
