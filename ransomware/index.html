@@ -9,6 +9,13 @@
 <link rel='stylesheet' type='text/css' href='style.css'>
 <link rel="icon" href="mini-icon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<script>
+    history.pushState(null, null, null);
+    window.onpopstate = function (event) {
+        history.pushState(null, null, null);
+        alert("ハッキングが終了するまで戻ることはできません。");
+    };
+</script>
 </head>
 <body>
     <div id="app">
