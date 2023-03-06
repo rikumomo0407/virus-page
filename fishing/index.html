@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+<title>Amazonサインイン</title>
+<link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="reset.css">
+<link rel='stylesheet' type='text/css' href='style.css'>
+<link rel="icon" href="mini-icon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<script language="javascript">
+	function OnLinkClick(){
+		if (document.getElementById("question-icon") == undefined){
+			document.getElementById('password-hidden').setAttribute("style","display:none");
+			document.getElementById('login-hidden').setAttribute("style","display:none");
+			document.getElementById("icon-collapse").setAttribute("id", "question-icon");
+		} else {
+			document.getElementById('password-hidden').setAttribute("style","display:block");
+			document.getElementById('login-hidden').setAttribute("style","display:block");
+			document.getElementById("question-icon").setAttribute("id", "icon-collapse");
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<a tabindex="-1" href="https://www.amazon.co.jp/ref=ap_frn_logo">
+				<i id="logo" role="img" aria-label="Amazon"></i>
+				<i id="domain" role="presentation"></i>
+			</a>
+		</div>
+		<div id="middle">
+			<form name="signIn" method="post" novalidate="" action="" id="login">
+				<div class="section">
+					<div id="box">
+						<h1>ログイン</h1>
+						<div id="address">
+							<label for="ap_email">Eメールまたは携帯電話番号</label>
+							<input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field">
+							<div id="alert" style="display: none;"><i class="a-icon-alert"></i><div class="a-alert-content">メールアドレスまたは携帯電話番号を入力してください</div></div>
+						</div>
+						<div id="next">
+							<span id="continue">
+								<span class="button-inner">
+									<input id="button-input" tabindex="5" type="submit" aria-labelledby="button-text">
+									<span class="button-text" aria-hidden="true">次に進む</span>
+								</span>
+							</span>
+							<div id="legalTextRow">
+								Amazonの<a href="https://www.amazon.co.jp/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=643006">利用規約</a>と<a href="https://www.amazon.co.jp/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=643000">プライバシー規約</a>に同意いただける場合はログインしてください。
+							</div>
+						</div>
+						<div id="question">
+							<a id="question-button" data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0);" onclick="OnLinkClick();" data-action="a-expander-toggle" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="dnbwwg-pd0l9z-228yzr-2xt07m"><i id="question-icon"></i><span class="a-expander-prompt">お困りですか?</span></a>
+							<div aria-expanded="false" id="password-hidden" class="question-hidden" style="display:none">
+								<a href="https://www.amazon.co.jp/ap/forgotpassword?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=jpflex&amp;ignoreAuthState=1&amp;mobileBrowserWeblabTreatment=C&amp;openid.return_to=https%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fcss%2Fhomepage.html%3Fref_%3Dnav_youraccount_switchacct&amp;prevRID=QN6AV0GW3KF921S13PAK&amp;openid.assoc_handle=jpflex&amp;openid.mode=checkid_setup&amp;desktopBrowserWeblabTreatment=C&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;ref_=ap_sw_aa&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;disableLoginPrepopulate=1&amp;switch_account=signin&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">パスワードを忘れた場合</a>
+							</div>
+							<div aria-expanded="false" id="login-hidden" class="question-hidden" style="display:none">
+								<a href="https://www.amazon.co.jp/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">その他のログインに関する問題</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div id="beginner"><h5 aria-level="5">初めてAmazonをご利用ですか？</h5></div>
+			<span id="create-account"><span class="button-inner"><a href="https://www.amazon.co.jp/ap/register?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=jpflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.co.jp%2F%3F%26tag%3Dhydraamazonav-22%26ref%3Dnav_custrec_signin%26adgrpid%3D56100363354%26hvpone%3D%26hvptwo%3D%26hvadid%3D646228128238%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D9089330120710215634%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D1009721%26hvtargid%3Dkwd-10573980%26hydadcr%3D27922_14611300%26gclid%3DEAIaIQobChMI7aaE36fH_QIVqddMAh2gewCtEAAYASAAEgI9LvD_BwE&prevRID=08J7PK9ZBNT6F7JE2DGX&openid.assoc_handle=jpflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="button-text">Amazonアカウントを作成する</a></span></span>
+		</div>
+		<div id="right-2"></div>
+		<div id="footer">
+			<div id="divider-inner"></div>
+			<div id="auth-footer" class="section spacing-small text-center size-mini">
+				<span></span>
+				<a target="_blank" href="https://www.amazon.co.jp/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=643006">利用規約</a>
+				<span></span>
+				<a target="_blank" href="https://www.amazon.co.jp/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=643000">プライバシー規約</a>
+				<span></span>
+				<a target="_blank" href="https://www.amazon.co.jp/gp/help/customer/display.html/ref=jp_surl_help?nodeId=508510">ヘルプ</a>
+				<span></span>
+			</div>
+			<div id="rights-footer" class="section text-center">
+				<span class="size-mini">© 1996-2023, Amazon.com, Inc. またはその関連会社</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
