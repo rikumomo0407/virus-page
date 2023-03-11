@@ -1,6 +1,6 @@
-# 詐欺サイト体験
+# 😈詐欺サイト体験
 
-https://rikumomo0407.github.io/virus-page
+🏠https://rikumomo0407.github.io/virus-page
 
 上記のURLからWeb上でのワンクリック詐欺やフィッシング詐欺、ランサムウェアなどを体験できます。
 
